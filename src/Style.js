@@ -45,7 +45,17 @@ export const Main = styled.section`
     }
   }
 
-  @media(max-width: 360px){
+  @media(max-width: 768px){
+    > .bubbleOrb, .bubbleOrbDois{
+      display: none;
+    }
+    
+    > img {
+      width: 40%;
+    }
+  }
+
+  @media(max-width: 414px){
     > .bubbleOrb, .bubbleOrbDois{
       display: none;
     }
@@ -65,23 +75,13 @@ export const Main = styled.section`
     }
   }
 
-  @media(max-width: 414px){
+  @media(max-width: 360px){
     > .bubbleOrb, .bubbleOrbDois{
       display: none;
     }
     
     > img {
       width: 70%;
-    }
-  }
-
-  @media(max-width: 768px){
-    > .bubbleOrb, .bubbleOrbDois{
-      display: none;
-    }
-    
-    > img {
-      width: 40%;
     }
   }
 `;
@@ -103,13 +103,8 @@ export const BoxPokemon = styled.div`
     text-align: center;
   }
 
-  @media(max-width: 360px){
-    width: 100%;
-    height: 55vh;
-  }
-
-  @media(max-width: 411px){
-    width: 100%;
+  @media(max-width: 768px){
+    width: 70%;
     height: 55vh;
   }
 
@@ -118,8 +113,13 @@ export const BoxPokemon = styled.div`
     height: 55vh;
   }
 
-  @media(max-width: 768px){
-    width: 70%;
+  @media(max-width: 411px){
+    width: 100%;
+    height: 55vh;
+  }
+  
+  @media(max-width: 360px){
+    width: 100%;
     height: 55vh;
   }
 `;
